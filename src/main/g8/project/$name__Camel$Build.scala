@@ -10,7 +10,13 @@ object $name;format="Camel"$Build extends Build {
       name := "$name$",
       organization := "$organization$",
       version := "$version$",
-      scalaVersion := "$scala_version$"
+      scalaVersion := "$scala_version$",
+      resolvers ++= Seq(
+
+      ),
+      libraryDependencies ++= Seq(
+
+      )
       // add other settings here
     )
   )
